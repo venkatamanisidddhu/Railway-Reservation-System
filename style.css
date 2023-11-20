@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    border: border-box;
+}
+body {
+    background-color: rgb(24, 24, 44);
+}
+.navbar {
+    height: 25px;
+    background-color:hsl(from  rgb(24, 24, 44) h s l);
+    
+    text-align: center;
+    flex: 1;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.head {
+    text-align: center;
+    font-family: 'Poppins';
+    background-color: rgb(24, 24, 44);
+    align-items: center;
+   
+} 
+.div-head {
+    color:#137fa9;
+    }
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2px 20px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+li {  
+    word-spacing: 2px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(82, 81, 81);
+    margin-right: 25px;
+}
+.navbar ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+}
+.navbar li:hover {
+    background-color: rgb(180, 42, 0);
+    color: white;
+}
+
+.holiday-packages {
+    position: relative;
+    display: inline-block;
+}
+
+.holiday-menu {
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.holiday-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(24, 24, 44);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.holiday-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.holiday-content a:hover {
+    background-color:rgb(5, 96, 102);
+}
+
+.holiday-packages:hover .holiday-content {
+    display: block;
+}
+h2 {
+    word-spacing: 40px;
+}
+
+.booking-box {
+    width: 450px;
+    margin: 0 auto;
+    padding: 40px;  
+    border: 2px solid rgb(146, 165, 165);
+    border-radius: 10px;
+    text-align: left; 
+    background-color: #a8a7a7;
+
+}
+
+.booking-box input[type="text"],
+.booking-box input[type="number"],
+.booking-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-box button {
+    background-color: #d66c0f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form{
+    float: left;
+    margin-left: 1%;
+   width:20%;
+   margin-top: 2%;
+}
+ img{
+    margin-right: 2%;
+    margin-top: 3%;
+}
+.booking-box button:hover {
+    background-color: #0d5559;
+}
+.book{
+    margin-left:20%;
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins';
+}
+
+.tkt{
+    margin-left:52%;
+    font-size:1.7em;
+    color: #000000;
+    font-family: 'Poppins';
+}
+.calender{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+}
+.date {
+    margin-left: 10px;
+    size: 50%;
+}
+button {
+    width: 80%;
+    margin-left: 30px;
+}
+span {
+    font-size: 1.7rem;
+    font-family: 'Poppins';
+}
+.holidays {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-right: 250px;
+    color: white;
+    }
+.tourist-trains {
+    display: flex;
+    justify-content: center;
+
+}
+.card {
+    background-color: rgb(228, 227, 227);
+    width: 500px;
+    height: 600px;
+    margin: 40px;
+    box-shadow: 0 0 4px black;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.cardimage {
+    background-color: #000000;
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 2px;
+    transition: all 1.1s;
+    }
+.img-1 {
+    background-image: url('img-1.jpg');
+   
+}
+.card p{
+    font-family: Georgia, serif;
+    word-spacing: 8px;
+    padding: 10px;
+    opacity: 0.9;
+}
+.card a{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.card a:hover{
+    font-size: 1.2rem;
+}
+.img-2 {
+    background-image: url('img-2.jpg');
+}
+.img-3 {
+    background-image: url('img-3.jpg');
+}
+.card:hover .cardimage {
+    transform: scale(1.1);
+}
+.tour-packages {
+    display: flex;
+    justify-content: center;
+}
+.img-4 {
+    background-image: url('img-4.jpg');
+}
+.img-5 {
+    background-image: url('img-5.jpg');
+}
+.img-6 {
+    background-image: url('img-6.jpg');
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #d0d0d0;
+    padding: 40px 0;
+    height: 150px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justifys-content: space-between;
+    
+  }
+  
+  .about-us,
+  .social-media,
+  .copyright {
+    flex: 1 1 100%;
+  }
+  
+  .about-us h3,
+  .social-media h3 {
+    color: #faa328;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+  
+  .about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .social-media  {
+    margin-left: 40px;
+  }
+  
+  .social-media a {
+    color: #dfdfdf;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    
+  }
+  
+  .social-media i {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  
+  .copyright p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  
+  
+  .fab {
+    font-size: 24px;
+  }
+  
+
+  .social-media  .insta:hover {
+    color: rgb(160, 9, 79);
+  }
+  .social-media  .Facebook:hover {
+    color: rgb(9, 95, 138);
+  } 
+   .social-media  .email:hover {
+    color: rgb(144, 144, 144)
+  }  
+  .social-media  .phone:hover {
+    color: rgb(9, 145, 160);
+  }
+
+  @media (max-width: 768px) {
+    .social-media li {
+      margin-right: 10px;
+    }
+  }
+  
