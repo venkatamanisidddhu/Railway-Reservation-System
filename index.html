@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wgt@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Railway Reservation System</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1 class="div-head"><b>RAILWAY RESERVATION SYSTEM</b></h1>
+        </div><br>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MEALS</a></li>
+            <li class="holiday-packages">
+                <a href="#" class="holiday-menu">HOLIDAY PACKAGES</a>
+                <div class="holiday-content">
+                    <a href="#tourist-trains">TOURIST TRAINS</a>
+                    <a href="#tour-packages">TOUR PACKAGES</a>
+                </div>
+            <li><a href="#">SERVICE AT STATION</a></li>
+            <li><a href="#social-media">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="booking-section">
+            <img src="train-img.jpg" alt="Indian Railways Image" width="61%" class="railway-image" align="right" style="border-radius: 5px;">
+            <form class="box" method="post" id="booking-form">
+                <div class="booking-box">
+                    <h2 class="book">BOOK</h2><br>
+                    <h2 class="tkt">YOUR</h2>
+                    <h2 class="book">TICKETS</h2>
+                    <h2 class="tkt">HERE</h2>
+                    <br><br>
+                    <input type="text" id="from" name="from" required placeholder="Departure Station">
+                    <center><i class="fa-solid fa-arrow-right-arrow-left fa-rotate-90 fa-xl" style="color: #c80909;"></i></center><br><br>  
+                   
+                    <input type="text" id="to" name="to" required placeholder="Destination Station">
+
+                    <div class="calender">
+                        
+                        <i class="fas fa-calendar-days"></i>
+                        <input class="date" type="date" id="date" name="date" required>
+                    </div>
+                    <br>
+                    <select id="class" name="class">
+                        <option value="">All Classes</option>
+                        <option value="sleeper">Sleeper (SL)</option>
+                        <option value="business">AC FIRST CLASS (1A)</option>
+                        <option value="first-class">AC 2 Tier (2A)</option>
+                        <option value="first-class">AC 3 Tier (3A)</option>
+                        <option value="first-class">AC 3 Economy (3E)</option>
+                        <option value="first-class">Second Sitting (2S)</option>
+                        <option value="first-class">First Class (FC)</option>
+                    </select>
+
+                    <select id="berth" name="berth">
+                        <option value="">Select Berth</option>
+                        <option value="lower">Lower Berth</option>
+                        <option value="Upper">Upper  Berth</option>
+                        <option value="Middle">Middle Berth</option>
+                        <option value="Side">Side Berth</option>
+                    </select><br>
+                    <button class="button" type="submit">Find Trains</button>
+                </div>
+            </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+        <div id="holiday-packages">
+        <div class="holidays">
+            <h2>HOLIDAYS</h2>
+            </div>
+            <br><br><br><br>
+        <section class="tourist-trains" id="tourist-trains">
+            <div class="card">
+                <div class="cardimage img-1"></div>
+                <h3>Maharajas' Express</h3><br>
+                <p>The Maharaja Express is a luxury tourist train in India, renowned for its opulent travel experience and royal ambiance. Launched in 2010, the train 
+                    offers a unique blend of modern amenities and a journey reminiscent of the regal era of Indian maharajas. Operated by Indian Railway Catering and 
+                    Tourism Corporation (IRCTC), the Maharaja Express traverses through some of the most iconic destinations in India, covering popular tourist circuits.
+               </p>
+               <a href="https://www.the-maharajas.com/" target="_blank">Read More</a>
+               </div>
+            <div class="card">
+                <div class="cardimage img-2"></div>
+                <h3>Bharat Gaurav Tourist Train</h3><br>
+                <p>IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This 
+                    train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase 
+                    India’s rich cultural heritage.
+                </p><br>
+                <a href="https://www.irctctourism.com/bharatgaurav" target="_blank">Read More</a>
+                </div>
+            <div class ="card">
+                <div class="cardimage img-3"></div>
+                <h3>Golden Chariot</h3>
+                <p >The Golden Chariot connects major tourist areas in Karnataka, Kerala, Goa, Tamil Nadu, and Puducherry weekly. Named after the stone chariot at 
+                    Hampi's Vitthala temple, the train's 19 purple-and-gold coaches feature a logo depicting a mythological animal with the head of an elephant and the
+                     body of a lion. Its amenities are inspired by the Palace on Wheels.the Golden Chariot offers hospitality by the Mapple Group.
+                </p><br>
+                <a href="https://www.goldenchariot.org/" target="_blank">Read More</a>
+            </div>
+            </section>
+            <section class="tour-packages" id="tour-packages">
+                <div class="card" style="height: 700px; width: 500px;">
+                    <div class="cardimage img-4"></div>
+                    <h3>Rail Tour Packages</h3><br>
+                    <p style="word-spacing: 15px;">IRCTC presents exclusive rail tour packages featuring confirmed train tickets, sightseeing, and meals, inviting 
+                        travelers to explore enchanting destinations like the Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, and Gangtok. For those seeking 
+                        divine experiences, the corporation offers thoughtfully curated tours to Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati, ensuring a 
+                        seamless blend of spiritual and scenic wonders. Additionally, holiday and land packages are available, providing comprehensive travel solutions 
+                        for a memorable and hassle-free journey to these captivating destinations.
+                    </p><br>
+                    <a href="https://www.irctctourism.com/bharatgaurav" target="_blank">Read More</a>
+                </div>
+                <div class="card" style="height: 700px; width: 500px;">
+                    <div class="cardimage img-5"></div>
+                    <h3>International Packages</h3><br>
+                    <p style="word-spacing: 15px;">Discover the world with IRCTC's handpicked international holiday packages featuring the best deals for destinations 
+                        like Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, and Australia etc. These meticulously crafted 
+                        packages ensure a hassle-free and memorable experience by including sightseeing, meals, visa charges, and overseas medical insurance. 
+                        Immerse yourself in the richness of diverse cultures and landscapes as you embark on a journey curated for unparalleled exploration and enjoyment.
+                   </p><br><br>
+                   <a href="https://www.irctctourism.com/" target="_blank">Read More</a>
+                </div>
+                <div class="card" style="height: 700px; width: 500px;">
+                    <div class="cardimage img-6"></div>
+                    <h3>Domestic Air Packages</h3><br>
+                    <P style="word-spacing: 17px;">Explore India effortlessly with IRCTC's Domestic Air Packages, catering to spiritual devotees seeking blessings in 
+                        Tirupati, Shirdi, or Mata Vaishno Devi. For the leisure traveler, these packages offer a chance to relish the diverse landscapes, from the Blue 
+                        Mountains of the North East to the Sand-dunes of Rajasthan, the Hamlets of Ladakh, Wonders of the Himalayas, serene lakes, and picturesque 
+                        islands. With IRCTC, embark on a journey to discover the rich tapestry of India.
+                    </P><br><br>
+                    <a href="https://www.irctctourism.com/" target="_blank">Read More</a>
+                </div>
+            </section>
+            </div>
+        </main><br><br>
+        <section>
+          <footer>
+    <div class="footer-content">
+      <div class="about-us">
+        <h3>About Us</h3>
+        <p>Welcome to our Railway Reservation System, where  your journey begins with comfort and convenience.</p>
+      </div>
+      
+      <div class="social-media" id="social-media">
+        <h3>Connect with Us</h3>
+        <ul>
+          <li><a href="https://instagram.com/irctc.official?igshid=MzMyNGUyNmU2YQ== " target="_blank" class="insta"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" target="_blank" class="Facebook"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="mailto:railwayreservationsystem81@gmail.com" class="email"><i class="far fa-envelope"></i> Email</a></li>
+          <li><a href="tel:+1234567890" class="phone"><i class="fas fa-phone"></i> Phone</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2023 Railway Reservation System. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+
